@@ -1,0 +1,15 @@
+/Users/hoangthang/Desktop/WorkSpace/C#/AsyncAwaitCSharp/AsyncAwait/AsyncAwait/bin/Debug/net6.0/AsyncAwait
+/Users/hoangthang/Desktop/WorkSpace/C#/AsyncAwaitCSharp/AsyncAwait/AsyncAwait/bin/Debug/net6.0/AsyncAwait.deps.json
+/Users/hoangthang/Desktop/WorkSpace/C#/AsyncAwaitCSharp/AsyncAwait/AsyncAwait/bin/Debug/net6.0/AsyncAwait.runtimeconfig.json
+/Users/hoangthang/Desktop/WorkSpace/C#/AsyncAwaitCSharp/AsyncAwait/AsyncAwait/bin/Debug/net6.0/AsyncAwait.dll
+/Users/hoangthang/Desktop/WorkSpace/C#/AsyncAwaitCSharp/AsyncAwait/AsyncAwait/bin/Debug/net6.0/AsyncAwait.pdb
+/Users/hoangthang/Desktop/WorkSpace/C#/AsyncAwaitCSharp/AsyncAwait/AsyncAwait/obj/Debug/net6.0/AsyncAwait.csproj.AssemblyReference.cache
+/Users/hoangthang/Desktop/WorkSpace/C#/AsyncAwaitCSharp/AsyncAwait/AsyncAwait/obj/Debug/net6.0/AsyncAwait.GeneratedMSBuildEditorConfig.editorconfig
+/Users/hoangthang/Desktop/WorkSpace/C#/AsyncAwaitCSharp/AsyncAwait/AsyncAwait/obj/Debug/net6.0/AsyncAwait.AssemblyInfoInputs.cache
+/Users/hoangthang/Desktop/WorkSpace/C#/AsyncAwaitCSharp/AsyncAwait/AsyncAwait/obj/Debug/net6.0/AsyncAwait.AssemblyInfo.cs
+/Users/hoangthang/Desktop/WorkSpace/C#/AsyncAwaitCSharp/AsyncAwait/AsyncAwait/obj/Debug/net6.0/AsyncAwait.csproj.CoreCompileInputs.cache
+/Users/hoangthang/Desktop/WorkSpace/C#/AsyncAwaitCSharp/AsyncAwait/AsyncAwait/obj/Debug/net6.0/AsyncAwait.dll
+/Users/hoangthang/Desktop/WorkSpace/C#/AsyncAwaitCSharp/AsyncAwait/AsyncAwait/obj/Debug/net6.0/refint/AsyncAwait.dll
+/Users/hoangthang/Desktop/WorkSpace/C#/AsyncAwaitCSharp/AsyncAwait/AsyncAwait/obj/Debug/net6.0/AsyncAwait.pdb
+/Users/hoangthang/Desktop/WorkSpace/C#/AsyncAwaitCSharp/AsyncAwait/AsyncAwait/obj/Debug/net6.0/AsyncAwait.genruntimeconfig.cache
+/Users/hoangthang/Desktop/WorkSpace/C#/AsyncAwaitCSharp/AsyncAwait/AsyncAwait/obj/Debug/net6.0/ref/AsyncAwait.dll
