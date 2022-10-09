@@ -27,7 +27,8 @@ namespace AsyncAwait
                 var t = Task.Run(() =>
                 {
                     lastHash = ComputeSha256Hash(i.ToString());
-                    Console.WriteLine(lastHash);
+                    //Console.WriteLine(lastHash);
+                    //Console.WriteLine(Thread.CurrentThread.ManagedThreadId);
                 });
                 listTask.Add(t);
             }
@@ -41,6 +42,7 @@ namespace AsyncAwait
             {
                 await Task.Run(() =>
                 {
+                    Console.WriteLine(Thread.CurrentThread.ManagedThreadId);
                     lastHash = ComputeSha256Hash(i.ToString());
                 });
             }

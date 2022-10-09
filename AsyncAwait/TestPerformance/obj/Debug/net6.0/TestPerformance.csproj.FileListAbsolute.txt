@@ -1,0 +1,15 @@
+/Users/hoangthang/Desktop/WorkSpace/C#/AsyncAwaitCSharp/AsyncAwait/TestPerformance/bin/Debug/net6.0/TestPerformance
+/Users/hoangthang/Desktop/WorkSpace/C#/AsyncAwaitCSharp/AsyncAwait/TestPerformance/bin/Debug/net6.0/TestPerformance.deps.json
+/Users/hoangthang/Desktop/WorkSpace/C#/AsyncAwaitCSharp/AsyncAwait/TestPerformance/bin/Debug/net6.0/TestPerformance.runtimeconfig.json
+/Users/hoangthang/Desktop/WorkSpace/C#/AsyncAwaitCSharp/AsyncAwait/TestPerformance/bin/Debug/net6.0/TestPerformance.dll
+/Users/hoangthang/Desktop/WorkSpace/C#/AsyncAwaitCSharp/AsyncAwait/TestPerformance/bin/Debug/net6.0/TestPerformance.pdb
+/Users/hoangthang/Desktop/WorkSpace/C#/AsyncAwaitCSharp/AsyncAwait/TestPerformance/obj/Debug/net6.0/TestPerformance.csproj.AssemblyReference.cache
+/Users/hoangthang/Desktop/WorkSpace/C#/AsyncAwaitCSharp/AsyncAwait/TestPerformance/obj/Debug/net6.0/TestPerformance.GeneratedMSBuildEditorConfig.editorconfig
+/Users/hoangthang/Desktop/WorkSpace/C#/AsyncAwaitCSharp/AsyncAwait/TestPerformance/obj/Debug/net6.0/TestPerformance.AssemblyInfoInputs.cache
+/Users/hoangthang/Desktop/WorkSpace/C#/AsyncAwaitCSharp/AsyncAwait/TestPerformance/obj/Debug/net6.0/TestPerformance.AssemblyInfo.cs
+/Users/hoangthang/Desktop/WorkSpace/C#/AsyncAwaitCSharp/AsyncAwait/TestPerformance/obj/Debug/net6.0/TestPerformance.csproj.CoreCompileInputs.cache
+/Users/hoangthang/Desktop/WorkSpace/C#/AsyncAwaitCSharp/AsyncAwait/TestPerformance/obj/Debug/net6.0/TestPerformance.dll
+/Users/hoangthang/Desktop/WorkSpace/C#/AsyncAwaitCSharp/AsyncAwait/TestPerformance/obj/Debug/net6.0/refint/TestPerformance.dll
+/Users/hoangthang/Desktop/WorkSpace/C#/AsyncAwaitCSharp/AsyncAwait/TestPerformance/obj/Debug/net6.0/TestPerformance.pdb
+/Users/hoangthang/Desktop/WorkSpace/C#/AsyncAwaitCSharp/AsyncAwait/TestPerformance/obj/Debug/net6.0/TestPerformance.genruntimeconfig.cache
+/Users/hoangthang/Desktop/WorkSpace/C#/AsyncAwaitCSharp/AsyncAwait/TestPerformance/obj/Debug/net6.0/ref/TestPerformance.dll

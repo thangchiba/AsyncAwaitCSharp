@@ -1,4 +1,6 @@
-﻿<Properties StartupConfiguration="{4C83B371-735A-4B20-9888-7F2EE65E8211}|Default">
+﻿<Properties StartupConfiguration="{20254FC7-D3C4-4700-8FC6-757C99458FE9}|Default">
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.AsyncAwait FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.Server PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.ItemProperties.TestPerformance PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.ItemProperties.AsyncAwait PreferredExecutionTarget="MonoDevelop.Default" />
 </Properties>

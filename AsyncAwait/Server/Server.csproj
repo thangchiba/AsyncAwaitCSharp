@@ -8,6 +8,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include="..\.editorconfig" />
+    <None Remove="NetworkPackage\" />
+    <None Remove="ExtensionMethod\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="NetworkPackage\" />
+    <Folder Include="ExtensionMethod\" />
   </ItemGroup>
 </Project>
