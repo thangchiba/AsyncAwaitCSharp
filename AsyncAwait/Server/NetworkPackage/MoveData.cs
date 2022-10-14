@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Net;
 using System.Net.Sockets;
 using System.Security.Cryptography;
@@ -15,12 +15,16 @@ namespace Server.NetworkPackage
         public double bcd = 13;
         public MoveData()
         {
-
+            packageType = PackageType.MoveData;
         }
-        public MoveData(string id, int moveTo)
+        public MoveData(string id, int moveTo) : this()
         {
             this.id = id;
             this.moveTo = moveTo;
+        }
+        public override string ToString()
+        {
+            return $"id : {id} - moveTo : {moveTo}";
         }
     }
 }

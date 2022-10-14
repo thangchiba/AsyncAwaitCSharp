@@ -10,9 +10,13 @@
   <ItemGroup>
     <None Remove="NetworkPackage\" />
     <None Remove="ExtensionMethod\" />
+    <None Remove="Npgsql" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="NetworkPackage\" />
     <Folder Include="ExtensionMethod\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Npgsql" Version="6.0.7" />
   </ItemGroup>
 </Project>

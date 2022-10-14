@@ -1,0 +1,6 @@
+/Users/hoangthang/Desktop/WorkSpace/C#/AsyncAwaitCSharp/builder/Server
+/Users/hoangthang/Desktop/WorkSpace/C#/AsyncAwaitCSharp/builder/Server.dll
+/Users/hoangthang/Desktop/WorkSpace/C#/AsyncAwaitCSharp/builder/Server.deps.json
+/Users/hoangthang/Desktop/WorkSpace/C#/AsyncAwaitCSharp/builder/Server.runtimeconfig.json
+/Users/hoangthang/Desktop/WorkSpace/C#/AsyncAwaitCSharp/builder/Server.pdb
+/Users/hoangthang/Desktop/WorkSpace/C#/AsyncAwaitCSharp/builder/Npgsql.dll

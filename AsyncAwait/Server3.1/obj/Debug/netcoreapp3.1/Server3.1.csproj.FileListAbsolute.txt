@@ -1,0 +1,14 @@
+/Users/hoangthang/Desktop/WorkSpace/C#/AsyncAwaitCSharp/AsyncAwait/Server3.1/bin/Debug/netcoreapp3.1/Server3.1
+/Users/hoangthang/Desktop/WorkSpace/C#/AsyncAwaitCSharp/AsyncAwait/Server3.1/bin/Debug/netcoreapp3.1/Server3.1.deps.json
+/Users/hoangthang/Desktop/WorkSpace/C#/AsyncAwaitCSharp/AsyncAwait/Server3.1/bin/Debug/netcoreapp3.1/Server3.1.runtimeconfig.json
+/Users/hoangthang/Desktop/WorkSpace/C#/AsyncAwaitCSharp/AsyncAwait/Server3.1/bin/Debug/netcoreapp3.1/Server3.1.runtimeconfig.dev.json
+/Users/hoangthang/Desktop/WorkSpace/C#/AsyncAwaitCSharp/AsyncAwait/Server3.1/bin/Debug/netcoreapp3.1/Server3.1.dll
+/Users/hoangthang/Desktop/WorkSpace/C#/AsyncAwaitCSharp/AsyncAwait/Server3.1/bin/Debug/netcoreapp3.1/Server3.1.pdb
+/Users/hoangthang/Desktop/WorkSpace/C#/AsyncAwaitCSharp/AsyncAwait/Server3.1/obj/Debug/netcoreapp3.1/Server3.1.csproj.AssemblyReference.cache
+/Users/hoangthang/Desktop/WorkSpace/C#/AsyncAwaitCSharp/AsyncAwait/Server3.1/obj/Debug/netcoreapp3.1/Server3.1.GeneratedMSBuildEditorConfig.editorconfig
+/Users/hoangthang/Desktop/WorkSpace/C#/AsyncAwaitCSharp/AsyncAwait/Server3.1/obj/Debug/netcoreapp3.1/Server3.1.AssemblyInfoInputs.cache
+/Users/hoangthang/Desktop/WorkSpace/C#/AsyncAwaitCSharp/AsyncAwait/Server3.1/obj/Debug/netcoreapp3.1/Server3.1.AssemblyInfo.cs
+/Users/hoangthang/Desktop/WorkSpace/C#/AsyncAwaitCSharp/AsyncAwait/Server3.1/obj/Debug/netcoreapp3.1/Server3.1.csproj.CoreCompileInputs.cache
+/Users/hoangthang/Desktop/WorkSpace/C#/AsyncAwaitCSharp/AsyncAwait/Server3.1/obj/Debug/netcoreapp3.1/Server3.1.dll
+/Users/hoangthang/Desktop/WorkSpace/C#/AsyncAwaitCSharp/AsyncAwait/Server3.1/obj/Debug/netcoreapp3.1/Server3.1.pdb
+/Users/hoangthang/Desktop/WorkSpace/C#/AsyncAwaitCSharp/AsyncAwait/Server3.1/obj/Debug/netcoreapp3.1/Server3.1.genruntimeconfig.cache

@@ -12,6 +12,8 @@ namespace Server
     {
         TcpListener server;
         List<TcpClient> listClient;
+        private static object _listLock = new object();
+
         public ServerManager()
         {
             server = new TcpListener(IPAddress.Any, 1995);
@@ -26,16 +28,34 @@ namespace Server
         private void AcceptClientCallback(IAsyncResult result)
         {
             TcpClient client = server.EndAcceptTcpClient(result);
-            listClient.Add(client);
-            SendToAllClient(new MoveData());
+            Console.WriteLine(listClient.Count + " : " + client.Client.RemoteEndPoint.ToString() + " Connected");
+            lock (listClient)
+            {
+                listClient.Add(client);
+            }
             server.BeginAcceptTcpClient(AcceptClientCallback, null);
         }
 
         public void SendToAllClient(Package package)
         {
-            foreach (TcpClient client in listClient)
+            lock (listClient)
             {
-                client.Client.SendAsync(package.Serialize(),SocketFlags.None);
+                Console.WriteLine($"Send to {listClient.Count} client");
+                foreach (TcpClient client in listClient)
+                {
+                    client.Client.SendAsync(package.Serialize(), SocketFlags.None);
+                }
+            }
+        }
+        public void SendToAllClient(byte[] package)
+        {
+            lock (listClient)
+            {
+                Console.WriteLine($"Send to {listClient.Count} client");
+                foreach (TcpClient client in listClient)
+                {
+                    client.Client.SendAsync(package, SocketFlags.None);
+                }
             }
         }
     }

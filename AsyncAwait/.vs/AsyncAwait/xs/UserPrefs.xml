@@ -1,6 +1,61 @@
 ﻿<Properties StartupConfiguration="{20254FC7-D3C4-4700-8FC6-757C99458FE9}|Default">
-  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.Server3.1 PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.ItemProperties.Server PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Server/Program.cs">
+    <Files>
+      <File FileName="TestPerformance/Program.cs" Line="36" Column="17" />
+      <File FileName="Server/ServerManager.cs" Line="50" Column="21" />
+      <File FileName="Server/ClientTCP.cs" Line="19" Column="69" />
+      <File FileName="Server/NetworkPackage/MoveData.cs" Line="32" Column="1" />
+      <File FileName="Server/Program.cs" Line="14" Column="1" />
+      <File FileName="Server/NetworkPackage/Package.cs" Line="8" Column="34" />
+      <File FileName="Server/ExtensionMethod/ByteTransform.cs" Line="18" Column="14" />
+      <File FileName="Server/ClientTCP2.cs" Line="23" Column="75" />
+      <File FileName="Server/NetworkPackage/PackageType.cs" Line="8" Column="1" />
+      <File FileName="Server/DataConfigure.cs" Line="1" Column="1" />
+      <File FileName="Server/Server.csproj" Line="1" Column="1" />
+      <File FileName="Server3.1/Program.cs" Line="27" Column="65" />
+      <File FileName="Server3.1/ClientTCP.cs" Line="1" Column="1" />
+      <File FileName="Server3.1/NetworkPackage/LoginData.cs" Line="10" Column="37" />
+      <File FileName="Server3.1/ExtensionMethod/ByteTransform.cs" Line="18" Column="32" />
+      <File FileName="Server3.1/ClientTCP2.cs" Line="1" Column="1" />
+      <File FileName="Server3.1/ServerManager.cs" Line="34" Column="1" />
+      <File FileName="Server3.1/NetworkPackage/MoveData.cs" Line="1" Column="1" />
+      <File FileName="Server3.1/NetworkPackage/Package.cs" Line="1" Column="1" />
+      <File FileName="Server3.1/NetworkPackage/PackageType.cs" Line="1" Column="1" />
+      <File FileName="Server/NetworkPackage/LoginData.cs" Line="29" Column="10" />
+      <File FileName="AsyncAwait/Program.cs" Line="1" Column="1" />
+      <File FileName="AsyncAwait/TestAsyncAwait.cs" Line="23" Column="10" />
+      <File FileName="Server/EmptyClass.cs" Line="17" Column="21" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="AsyncAwait" expanded="True">
+            <Node name="AsyncAwait" expanded="True" />
+            <Node name="Server" expanded="True">
+              <Node name="NetworkPackage" expanded="True" />
+            </Node>
+            <Node name="Server3.1" expanded="True">
+              <Node name="ExtensionMethod" expanded="True" />
+            </Node>
+            <Node name="TestPerformance" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.TestPerformance PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/hoangthang/Desktop/WorkSpace/C#/AsyncAwaitCSharp/AsyncAwait/TestPerformance/Program.cs" relfile="TestPerformance/Program.cs" line="46" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.ItemProperties.AsyncAwait PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 </Properties>

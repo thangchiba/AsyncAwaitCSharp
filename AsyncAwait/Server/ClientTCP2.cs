@@ -4,6 +4,7 @@ using System.IO;
 using System.Net;
 using System.Net.Sockets;
 using System.Runtime.Serialization.Formatters.Binary;
+using System.Text;
 using System.Threading;
 using Server.ExtensionMethod;
 using Server.NetworkPackage;
@@ -20,6 +21,7 @@ namespace Server
         public void Connect()
         {
             ServerIP = new IPEndPoint(IPAddress.Parse("127.0.0.1"), 1995);
+            //ServerIP = new IPEndPoint(IPAddress.Parse("108.162.193.113"), 8080);
             client = new TcpClient(AddressFamily.InterNetwork);
             try
             {
@@ -46,8 +48,10 @@ namespace Server
                     CloseConnection();
                     return;
                 }
-                MoveData receivedPackage = readBuff.Deserialize<MoveData>();
-                AddMessage(receivedPackage);
+                client.NoDelay = false;
+                byte[] receivedData = new byte[receivedSize];
+                Buffer.BlockCopy(readBuff, 0, receivedData, 0, receivedSize);
+                //Package receivedPackage = receivedData.Deserialize<Package>();
                 receiveData.BeginRead(readBuff, 0, client.ReceiveBufferSize, ReceiveData, null);
             }
             catch (Exception e)
@@ -60,17 +64,31 @@ namespace Server
         private void CloseConnection()
         {
             Console.WriteLine("Closed Connection");
+            client.Close();
         }
 
-        public void Send(MoveData message)
+        public void Send(Package message)
         {
-            if (message.id != String.Empty)
-                client.Client.Send(message.Serialize());
-            AddMessage(message);
+            client.Client.Send(message.Serialize());
+            //AddMessage(message);
+        }
+        public void SendDDos()
+        {
+            try
+            {
+                client.Client.Send(new byte[256]);
+                Console.WriteLine("Sent data");
+            }
+            catch(Exception e)
+            {
+                Console.WriteLine("Cannot send data");
+            }
+
+            //AddMessage(message);
         }
         public void AddMessage(MoveData message)
         {
-            Console.WriteLine(message.id + " : " + message.moveTo);
+            //Console.WriteLine(message.id + " : " + message.moveTo);
         }
     }
 }
