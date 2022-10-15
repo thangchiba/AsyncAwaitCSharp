@@ -11,8 +11,13 @@ namespace Server
     public class ServerManager
     {
         TcpListener server;
+        TcpClient serverClient;
         List<TcpClient> listClient;
         private static object _listLock = new object();
+
+
+        NetworkStream receiveData;
+        private byte[] readBuff = new byte[512];
 
         public ServerManager()
         {
@@ -21,6 +26,7 @@ namespace Server
         }
         public void Start()
         {
+            server.Server.ReceiveBufferSize = 512;
             server.Start();
             server.BeginAcceptTcpClient(AcceptClientCallback, null);
         }
@@ -33,7 +39,29 @@ namespace Server
             {
                 listClient.Add(client);
             }
+            receiveData = client.GetStream();
+            receiveData.BeginRead(readBuff, 0, server.Server.ReceiveBufferSize, ReadData, null);
             server.BeginAcceptTcpClient(AcceptClientCallback, null);
+        }
+
+        private void ReadData(IAsyncResult ar)
+        {
+            var receivedSize = receiveData.EndRead(ar);
+            Console.WriteLine("Received data from " + receiveData.Socket.RemoteEndPoint);
+            if (receivedSize <= 0)
+            {
+                CloseConnection();
+            }
+            byte[] data = new byte[receivedSize];
+            Buffer.BlockCopy(readBuff, 0, data, 0, receivedSize);
+            LoginData pack = new LoginData(data);
+            Console.WriteLine(pack.userName);
+            receiveData.BeginRead(readBuff, 0, server.Server.ReceiveBufferSize, ReadData, null);
+        }
+
+        private void CloseConnection()
+        {
+            Console.WriteLine("Closed Connection");
         }
 
         public void SendToAllClient(Package package)
@@ -47,6 +75,7 @@ namespace Server
                 }
             }
         }
+
         public void SendToAllClient(byte[] package)
         {
             lock (listClient)

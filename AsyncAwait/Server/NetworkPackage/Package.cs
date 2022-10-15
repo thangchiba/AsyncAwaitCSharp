@@ -9,20 +9,19 @@ namespace Server.NetworkPackage
     [Serializable]
     public abstract class Package
     {
-        public List<byte> buffer;
-        public byte[] readableBuffer;
-        public int readPos;
+        internal List<byte> buffer = new List<byte>();
+        internal byte[] readableBuffer;
+        internal int readPos = 0;
 
         public abstract long GetSize();
-        public abstract void Serialize();
-        public abstract void Deserialize();
+        public abstract byte[] Serialize();
+        internal abstract void Deserialize();
 
         /// <summary>Creates a new empty packet (without an ID).</summary>
         public Package()
         {
             buffer = new List<byte>(); // Initialize buffer
             readPos = 0; // Set readPos to 0
-            Serialize();
         }
 
         /// <summary>Creates a new packet with a given ID. Used for sending.</summary>
@@ -32,7 +31,6 @@ namespace Server.NetworkPackage
             buffer = new List<byte>(); // Initialize buffer
             readPos = 0; // Set readPos to 0
             Write(_id); // Write packet id to the buffer
-            Serialize();
         }
 
         /// <summary>Creates a packet from which data can be read. Used for receiving.</summary>

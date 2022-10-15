@@ -15,7 +15,7 @@ namespace Server.NetworkPackage
         public LoginData()
         {
         }
-        public LoginData(string userName, string password) : this()
+        public LoginData(string userName, string password)
         {
             this.userName = userName;
             this.password = password;
@@ -25,10 +25,11 @@ namespace Server.NetworkPackage
         {
         }
 
-        public override void Deserialize()
+        internal override void Deserialize()
         {
             this.userName = ReadString();
             this.password = ReadString();
+            //return this;
         }
 
         public override long GetSize()
@@ -36,10 +37,11 @@ namespace Server.NetworkPackage
             throw new NotImplementedException();
         }
 
-        public override void Serialize()
+        public override byte[] Serialize()
         {
             Write(userName);
             Write(password);
+            return buffer.ToArray();
         }
     }
 }

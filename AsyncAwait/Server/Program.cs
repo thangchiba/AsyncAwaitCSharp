@@ -18,14 +18,21 @@ internal class Program
         //Console.WriteLine(con.ToString());
         //Console.WriteLine(BitConverter.ToInt16(con, 0));
         //Console.WriteLine(new LoginData("thangchiba", "123456").GetSize());
+        for(int i = 0; i < 100; i++)
+        {
+            ClientTCP client4 = new ClientTCP();
+            client4.Connect();
+            client4.Send(new LoginData("thangchiba"+i, "12345678"));
+        }
 
-        ClientTCP client4 = new ClientTCP();
-        client4.Connect();
-        client4.Send(new LoginData("thangchiba", "123456"));
+
+        ClientTCP client5 = new ClientTCP();
+        client5.Connect();
+        client5.Send(new LoginData("client5", "12345678"));
         //Thread.Sleep(500);
-        byte[] a = new byte[1024];
-        a = new LoginData("thangchiba", "123456");
-        var b = new LoginData(a);
+        //byte[] a = new byte[1024];
+        //var a = new LoginData("hoangthang", "123456");
+        //var b = new LoginData(a.Serialize());
         Console.ReadKey();
     }
 
