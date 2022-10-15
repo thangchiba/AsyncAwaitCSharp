@@ -1,0 +1,15 @@
+/Users/hoangthang/Desktop/WorkSpace/C#/AsyncAwaitCSharp/AsyncAwait/TemplateServer/bin/Debug/net6.0/TemplateServer
+/Users/hoangthang/Desktop/WorkSpace/C#/AsyncAwaitCSharp/AsyncAwait/TemplateServer/bin/Debug/net6.0/TemplateServer.deps.json
+/Users/hoangthang/Desktop/WorkSpace/C#/AsyncAwaitCSharp/AsyncAwait/TemplateServer/bin/Debug/net6.0/TemplateServer.runtimeconfig.json
+/Users/hoangthang/Desktop/WorkSpace/C#/AsyncAwaitCSharp/AsyncAwait/TemplateServer/bin/Debug/net6.0/TemplateServer.dll
+/Users/hoangthang/Desktop/WorkSpace/C#/AsyncAwaitCSharp/AsyncAwait/TemplateServer/bin/Debug/net6.0/TemplateServer.pdb
+/Users/hoangthang/Desktop/WorkSpace/C#/AsyncAwaitCSharp/AsyncAwait/TemplateServer/obj/Debug/net6.0/TemplateServer.csproj.AssemblyReference.cache
+/Users/hoangthang/Desktop/WorkSpace/C#/AsyncAwaitCSharp/AsyncAwait/TemplateServer/obj/Debug/net6.0/TemplateServer.GeneratedMSBuildEditorConfig.editorconfig
+/Users/hoangthang/Desktop/WorkSpace/C#/AsyncAwaitCSharp/AsyncAwait/TemplateServer/obj/Debug/net6.0/TemplateServer.AssemblyInfoInputs.cache
+/Users/hoangthang/Desktop/WorkSpace/C#/AsyncAwaitCSharp/AsyncAwait/TemplateServer/obj/Debug/net6.0/TemplateServer.AssemblyInfo.cs
+/Users/hoangthang/Desktop/WorkSpace/C#/AsyncAwaitCSharp/AsyncAwait/TemplateServer/obj/Debug/net6.0/TemplateServer.csproj.CoreCompileInputs.cache
+/Users/hoangthang/Desktop/WorkSpace/C#/AsyncAwaitCSharp/AsyncAwait/TemplateServer/obj/Debug/net6.0/TemplateServer.dll
+/Users/hoangthang/Desktop/WorkSpace/C#/AsyncAwaitCSharp/AsyncAwait/TemplateServer/obj/Debug/net6.0/refint/TemplateServer.dll
+/Users/hoangthang/Desktop/WorkSpace/C#/AsyncAwaitCSharp/AsyncAwait/TemplateServer/obj/Debug/net6.0/TemplateServer.pdb
+/Users/hoangthang/Desktop/WorkSpace/C#/AsyncAwaitCSharp/AsyncAwait/TemplateServer/obj/Debug/net6.0/TemplateServer.genruntimeconfig.cache
+/Users/hoangthang/Desktop/WorkSpace/C#/AsyncAwaitCSharp/AsyncAwait/TemplateServer/obj/Debug/net6.0/ref/TemplateServer.dll

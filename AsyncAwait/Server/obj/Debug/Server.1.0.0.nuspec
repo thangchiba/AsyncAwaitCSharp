@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Server</id>
+    <version>1.0.0</version>
+    <authors>Server</authors>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework="net6.0">
+        <dependency id="Npgsql" version="6.0.7" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="/Users/hoangthang/Desktop/WorkSpace/C#/AsyncAwaitCSharp/AsyncAwait/Server/bin/Debug/net6.0/Server.runtimeconfig.json" target="lib/net6.0/Server.runtimeconfig.json" />
+    <file src="/Users/hoangthang/Desktop/WorkSpace/C#/AsyncAwaitCSharp/AsyncAwait/Server/bin/Debug/net6.0/Server.dll" target="lib/net6.0/Server.dll" />
+  </files>
+</package>

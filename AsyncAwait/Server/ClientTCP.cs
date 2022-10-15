@@ -4,6 +4,7 @@ using System.IO;
 using System.Net;
 using System.Net.Sockets;
 using System.Runtime.Serialization.Formatters.Binary;
+using System.Text;
 using System.Threading;
 using Server.ExtensionMethod;
 using Server.NetworkPackage;
@@ -12,55 +13,76 @@ namespace Server
 {
     public class ClientTCP
     {
-        IPEndPoint IP;
-        Socket client;
+        IPEndPoint ServerIP;
+        public TcpClient client;
+        NetworkStream receiveData;
+        private byte[] readBuff = new byte[512];
+
         public void Connect()
         {
-            IP = new IPEndPoint(IPAddress.Parse("127.0.0.1"), 1995);
-            client = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.IP);
+            ServerIP = new IPEndPoint(IPAddress.Parse("127.0.0.1"), 1995);
+            //ServerIP = new IPEndPoint(IPAddress.Parse("108.162.193.113"), 8080);
+            client = new TcpClient(AddressFamily.InterNetwork);
             try
             {
-                client.Connect(IP);
-                Thread receiveThread = new Thread(Receive);
-                receiveThread.IsBackground = true;
-                receiveThread.Start();
+                client.Connect(ServerIP);
+                receiveData = client.GetStream();
+                Array.Resize(ref readBuff, client.ReceiveBufferSize);
+                receiveData.BeginRead(readBuff, 0, client.ReceiveBufferSize, ReceiveData, null);
                 Console.WriteLine("Kết nối sv thành công");
-            }
-            catch
-            {
-                Console.WriteLine("khong the ket noi sv");
-            }
-        }
-        public void Receive()
-        {
-            try
-            {
-                while (true)
-                {
-                    byte[] data = new byte[1024];
-                    client.Receive(data);
-                    MoveData message = data.Deserialize<MoveData>();
-                    AddMessage(message);
-                }
             }
             catch (Exception e)
             {
-                Console.WriteLine("Loi nhan du lieu");
-                Console.WriteLine(e.Message);
+                Console.WriteLine("Khong the ket noi sv");
             }
-
         }
 
-
-        public void Send(MoveData message)
+        private void ReceiveData(IAsyncResult ar)
         {
-            if (message.id != String.Empty)
-                client.Send(message.Serialize());
-            AddMessage(message);
+            try
+            {
+                int receivedSize = receiveData.EndRead(ar);
+                if (client == null) return;
+                if (receivedSize <= 0)
+                {
+                    CloseConnection();
+                    return;
+                }
+                client.NoDelay = false;
+                byte[] receivedData = new byte[receivedSize];
+                Buffer.BlockCopy(readBuff, 0, receivedData, 0, receivedSize);
+                //Package receivedPackage = receivedData.Deserialize<Package>();
+                receiveData.BeginRead(readBuff, 0, client.ReceiveBufferSize, ReceiveData, null);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Cannot Received Data");
+                CloseConnection();
+            }
         }
-        public void AddMessage(MoveData message)
+
+        private void CloseConnection()
         {
-            Console.WriteLine(message.id + " : " + message.moveTo);
+            Console.WriteLine("Closed Connection");
+            client.Close();
+        }
+
+        public void Send(Package message)
+        {
+            client.Client.Send(message.Serialize());
+            //AddMessage(message);
+        }
+        public void SendDDos()
+        {
+            try
+            {
+                client.Client.Send(new byte[256]);
+                Console.WriteLine("Sent data");
+            }
+            catch(Exception e)
+            {
+                Console.WriteLine("Cannot send data");
+            }
         }
     }
 }

@@ -6,7 +6,7 @@ namespace Server.ExtensionMethod
 {
     public static class ByteTransform
     {
-        public static byte[] Serialize(this Package obj)
+        public static byte[] Serialize(Package obj)
         {
             MemoryStream stream = new MemoryStream();
             BinaryFormatter bf = new BinaryFormatter();
@@ -22,7 +22,7 @@ namespace Server.ExtensionMethod
             return stream.ToArray();
         }
 
-        public static T? Deserialize<T>(this byte[] byteArray)
+        public static T? Deserialize<T>(byte[] byteArray)
         {
             MemoryStream stream = new MemoryStream(byteArray);
             BinaryFormatter bf = new BinaryFormatter();

@@ -14,7 +14,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		.editorconfig = .editorconfig
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server3.1", "Server3.1\Server3.1.csproj", "{96C751C0-C5EB-4ED6-AFE3-A610C3EB2D53}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TemplateServer", "TemplateServer\TemplateServer.csproj", "{678C13BF-B40F-491F-A71B-FEF4B04CF550}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -34,10 +34,10 @@ Global
 		{20254FC7-D3C4-4700-8FC6-757C99458FE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{20254FC7-D3C4-4700-8FC6-757C99458FE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{20254FC7-D3C4-4700-8FC6-757C99458FE9}.Release|Any CPU.Build.0 = Release|Any CPU
-		{96C751C0-C5EB-4ED6-AFE3-A610C3EB2D53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{96C751C0-C5EB-4ED6-AFE3-A610C3EB2D53}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{96C751C0-C5EB-4ED6-AFE3-A610C3EB2D53}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{96C751C0-C5EB-4ED6-AFE3-A610C3EB2D53}.Release|Any CPU.Build.0 = Release|Any CPU
+		{678C13BF-B40F-491F-A71B-FEF4B04CF550}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{678C13BF-B40F-491F-A71B-FEF4B04CF550}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{678C13BF-B40F-491F-A71B-FEF4B04CF550}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{678C13BF-B40F-491F-A71B-FEF4B04CF550}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -8,13 +8,12 @@ using System.Text;
 namespace Server.NetworkPackage
 {
     [Serializable]
-    public class LoginData : Package, ISerializable
+    public class LoginData : Package
     {
         public string userName;
         public string password;
         public LoginData()
         {
-            packageType = PackageType.LoginData;
         }
         public LoginData(string userName, string password) : this()
         {
@@ -22,16 +21,25 @@ namespace Server.NetworkPackage
             this.password = password;
         }
 
-        public void GetObjectData(SerializationInfo info, StreamingContext context)
+        public LoginData(byte[] data) : base(data)
         {
-            info.AddValue("userName", userName);
-            info.AddValue("password", password);
         }
 
-        public LoginData(SerializationInfo info, StreamingContext context)
+        public override void Deserialize()
         {
-            userName = (string)info.GetValue("userName", typeof(string));
-            password = (string)info.GetValue("password", typeof(string));
+            this.userName = ReadString();
+            this.password = ReadString();
+        }
+
+        public override long GetSize()
+        {
+            throw new NotImplementedException();
+        }
+
+        public override void Serialize()
+        {
+            Write(userName);
+            Write(password);
         }
     }
 }

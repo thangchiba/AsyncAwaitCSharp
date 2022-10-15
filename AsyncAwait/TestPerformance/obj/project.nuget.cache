@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "nRuVeMcHDIhQbaMerloR4ERVZmX4TxVkvoooEQm7+71nD5n2+2bBXD1grNQ/YE0PxUE512j/GRM3TGyD4pYdWA==",
+  "dgSpecHash": "VljJLMQCyS85qYBH3Mq4qdlaz/ZYJhm7vffr7MpSVCegbJPqsJ3eic3VSkOeRREQg0SpGz3dXnilEv6AT2tBnw==",
   "success": true,
   "projectFilePath": "/Users/hoangthang/Desktop/WorkSpace/C#/AsyncAwaitCSharp/AsyncAwait/TestPerformance/TestPerformance.csproj",
   "expectedPackageFiles": [],

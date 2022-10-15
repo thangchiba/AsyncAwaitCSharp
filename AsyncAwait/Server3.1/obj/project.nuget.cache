@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "dhd0Eav7s4R1NHojvrtFzlJmQl9k/T2bPaHh0bP/16A8otTPTraZ3c1SfxdmPl5rHCScMGsesQop43CNmYsp/w==",
+  "dgSpecHash": "h3CQUHy5pJzfXbbJSI3iLmxiArSO6+Sndv0cGLcR1/vmAKDmQ2pjMg+TWgBLaIlB/z0fDCrX7JAL99T3uC/MYQ==",
   "success": true,
   "projectFilePath": "/Users/hoangthang/Desktop/WorkSpace/C#/AsyncAwaitCSharp/AsyncAwait/Server3.1/Server3.1.csproj",
   "expectedPackageFiles": [
     "/Users/hoangthang/.nuget/packages/microsoft.aspnetcore.app.ref/3.1.10/microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
-    "/Users/hoangthang/.nuget/packages/microsoft.netcore.app.host.osx-x64/3.1.29/microsoft.netcore.app.host.osx-x64.3.1.29.nupkg.sha512",
+    "/Users/hoangthang/.nuget/packages/microsoft.netcore.app.host.osx-x64/3.1.30/microsoft.netcore.app.host.osx-x64.3.1.30.nupkg.sha512",
     "/Users/hoangthang/.nuget/packages/microsoft.netcore.app.ref/3.1.0/microsoft.netcore.app.ref.3.1.0.nupkg.sha512"
   ],
   "logs": []

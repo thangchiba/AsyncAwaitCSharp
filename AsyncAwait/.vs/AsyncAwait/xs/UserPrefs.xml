@@ -1,13 +1,16 @@
 ﻿<Properties StartupConfiguration="{20254FC7-D3C4-4700-8FC6-757C99458FE9}|Default">
-  <MonoDevelop.Ide.ItemProperties.Server3.1 PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.ItemProperties.Server PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Server/Program.cs">
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <Breakpoint file="/Users/hoangthang/Desktop/WorkSpace/C#/AsyncAwaitCSharp/AsyncAwait/TestPerformance/Program.cs" relfile="TestPerformance/Program.cs" line="46" column="1" />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench ActiveDocument="TemplateServer/GameLogic.cs">
     <Files>
       <File FileName="TestPerformance/Program.cs" Line="36" Column="17" />
       <File FileName="Server/ServerManager.cs" Line="50" Column="21" />
       <File FileName="Server/ClientTCP.cs" Line="19" Column="69" />
       <File FileName="Server/NetworkPackage/MoveData.cs" Line="32" Column="1" />
-      <File FileName="Server/Program.cs" Line="14" Column="1" />
+      <File FileName="Server/Program.cs" Line="39" Column="27" />
       <File FileName="Server/NetworkPackage/Package.cs" Line="8" Column="34" />
       <File FileName="Server/ExtensionMethod/ByteTransform.cs" Line="18" Column="14" />
       <File FileName="Server/ClientTCP2.cs" Line="23" Column="75" />
@@ -26,20 +29,25 @@
       <File FileName="Server/NetworkPackage/LoginData.cs" Line="29" Column="10" />
       <File FileName="AsyncAwait/Program.cs" Line="1" Column="1" />
       <File FileName="AsyncAwait/TestAsyncAwait.cs" Line="23" Column="10" />
-      <File FileName="Server/EmptyClass.cs" Line="17" Column="21" />
+      <File FileName="TemplateServer/Program.cs" Line="15" Column="61" />
+      <File FileName="TemplateServer/Client.cs" Line="1" Column="1" />
+      <File FileName="TemplateServer/ThreadManager.cs" Line="1" Column="1" />
+      <File FileName="TemplateServer/ServerSend.cs" Line="1" Column="1" />
+      <File FileName="TemplateServer/ServerHandle.cs" Line="10" Column="64" />
+      <File FileName="TemplateServer/Server.cs" Line="131" Column="73" />
+      <File FileName="TemplateServer/Packet.cs" Line="24" Column="18" />
+      <File FileName="TemplateServer/GameLogic.cs" Line="16" Column="39" />
+      <File FileName="TemplateServer/Player.cs" Line="30" Column="21" />
+      <File FileName="TemplateServer/Constants.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="AsyncAwait" expanded="True">
-            <Node name="AsyncAwait" expanded="True" />
-            <Node name="Server" expanded="True">
-              <Node name="NetworkPackage" expanded="True" />
+            <Node name="Server" expanded="True" />
+            <Node name="TemplateServer" expanded="True">
+              <Node name="GameLogic.cs" selected="True" />
             </Node>
-            <Node name="Server3.1" expanded="True">
-              <Node name="ExtensionMethod" expanded="True" />
-            </Node>
-            <Node name="TestPerformance" expanded="True" />
           </Node>
         </State>
       </Pad>
@@ -48,14 +56,9 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.TestPerformance PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/hoangthang/Desktop/WorkSpace/C#/AsyncAwaitCSharp/AsyncAwait/TestPerformance/Program.cs" relfile="TestPerformance/Program.cs" line="46" column="1" />
-    </BreakpointStore>
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.ItemProperties.AsyncAwait PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.TemplateServer PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.ItemProperties.TestPerformance PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.AsyncAwait PreferredExecutionTarget="MonoDevelop.Default" />
 </Properties>
