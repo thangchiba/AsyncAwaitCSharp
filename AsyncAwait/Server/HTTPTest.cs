@@ -6,8 +6,9 @@ namespace Server
     public class HTTPTest
     {
         HttpClient client = new HttpClient();
-        Ping ping = new Ping();
-        string url = "http://tutienproh5.com/";
+        object lockob = new object();
+        int count = 0;
+        string url = "tlhuuduyen.info";
         public async Task SendRequest()
         {
             await Task.Factory.StartNew(() => { client.GetAsync(url); });
@@ -16,7 +17,20 @@ namespace Server
 
         public void SendPing()
         {
-            ping.SendAsync(url, null);
+            while (true)
+            {
+                Ping ping = new Ping();
+                try
+                {
+                    var rep = ping.Send(url);
+                    //lock (lockob) count++;
+                    //Console.WriteLine(count);
+                }
+                finally
+                {
+                    ping.Dispose();
+                }
+            }
         }
     }
 }
