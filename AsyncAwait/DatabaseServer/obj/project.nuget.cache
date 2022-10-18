@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "uiaIrNAMELtszQtFk0HAG6pVFYUB9sHbFM2KQIt6J5ZkvVT9VhRf9HiOocsig6lpmgVfTLhjVipUAwt0Zn7nNw==",
+  "success": true,
+  "projectFilePath": "/Users/hoangthang/Desktop/WorkSpace/C#/AsyncAwaitCSharp/AsyncAwait/DatabaseServer/DatabaseServer.csproj",
+  "expectedPackageFiles": [
+    "/Users/hoangthang/.nuget/packages/npgsql/6.0.7/npgsql.6.0.7.nupkg.sha512",
+    "/Users/hoangthang/.nuget/packages/system.runtime.compilerservices.unsafe/6.0.0/system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

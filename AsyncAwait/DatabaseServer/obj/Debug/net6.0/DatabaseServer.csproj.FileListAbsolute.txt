@@ -1,0 +1,17 @@
+/Users/hoangthang/Desktop/WorkSpace/C#/AsyncAwaitCSharp/AsyncAwait/DatabaseServer/bin/Debug/net6.0/DatabaseServer
+/Users/hoangthang/Desktop/WorkSpace/C#/AsyncAwaitCSharp/AsyncAwait/DatabaseServer/bin/Debug/net6.0/DatabaseServer.deps.json
+/Users/hoangthang/Desktop/WorkSpace/C#/AsyncAwaitCSharp/AsyncAwait/DatabaseServer/bin/Debug/net6.0/DatabaseServer.runtimeconfig.json
+/Users/hoangthang/Desktop/WorkSpace/C#/AsyncAwaitCSharp/AsyncAwait/DatabaseServer/bin/Debug/net6.0/DatabaseServer.dll
+/Users/hoangthang/Desktop/WorkSpace/C#/AsyncAwaitCSharp/AsyncAwait/DatabaseServer/bin/Debug/net6.0/DatabaseServer.pdb
+/Users/hoangthang/Desktop/WorkSpace/C#/AsyncAwaitCSharp/AsyncAwait/DatabaseServer/bin/Debug/net6.0/Npgsql.dll
+/Users/hoangthang/Desktop/WorkSpace/C#/AsyncAwaitCSharp/AsyncAwait/DatabaseServer/obj/Debug/net6.0/DatabaseServer.csproj.AssemblyReference.cache
+/Users/hoangthang/Desktop/WorkSpace/C#/AsyncAwaitCSharp/AsyncAwait/DatabaseServer/obj/Debug/net6.0/DatabaseServer.GeneratedMSBuildEditorConfig.editorconfig
+/Users/hoangthang/Desktop/WorkSpace/C#/AsyncAwaitCSharp/AsyncAwait/DatabaseServer/obj/Debug/net6.0/DatabaseServer.AssemblyInfoInputs.cache
+/Users/hoangthang/Desktop/WorkSpace/C#/AsyncAwaitCSharp/AsyncAwait/DatabaseServer/obj/Debug/net6.0/DatabaseServer.AssemblyInfo.cs
+/Users/hoangthang/Desktop/WorkSpace/C#/AsyncAwaitCSharp/AsyncAwait/DatabaseServer/obj/Debug/net6.0/DatabaseServer.csproj.CoreCompileInputs.cache
+/Users/hoangthang/Desktop/WorkSpace/C#/AsyncAwaitCSharp/AsyncAwait/DatabaseServer/obj/Debug/net6.0/DatabaseServer.csproj.CopyComplete
+/Users/hoangthang/Desktop/WorkSpace/C#/AsyncAwaitCSharp/AsyncAwait/DatabaseServer/obj/Debug/net6.0/DatabaseServer.dll
+/Users/hoangthang/Desktop/WorkSpace/C#/AsyncAwaitCSharp/AsyncAwait/DatabaseServer/obj/Debug/net6.0/refint/DatabaseServer.dll
+/Users/hoangthang/Desktop/WorkSpace/C#/AsyncAwaitCSharp/AsyncAwait/DatabaseServer/obj/Debug/net6.0/DatabaseServer.pdb
+/Users/hoangthang/Desktop/WorkSpace/C#/AsyncAwaitCSharp/AsyncAwait/DatabaseServer/obj/Debug/net6.0/DatabaseServer.genruntimeconfig.cache
+/Users/hoangthang/Desktop/WorkSpace/C#/AsyncAwaitCSharp/AsyncAwait/DatabaseServer/obj/Debug/net6.0/ref/DatabaseServer.dll

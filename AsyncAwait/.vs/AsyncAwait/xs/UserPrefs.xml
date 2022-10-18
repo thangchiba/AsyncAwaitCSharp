@@ -1,53 +1,45 @@
 ﻿<Properties StartupConfiguration="{20254FC7-D3C4-4700-8FC6-757C99458FE9}|Default">
+  <MonoDevelop.Ide.ItemProperties.AsyncAwait PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.ItemProperties.Server PreferredExecutionTarget="MonoDevelop.Default" />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <Breakpoint file="/Users/hoangthang/Desktop/WorkSpace/C#/AsyncAwaitCSharp/AsyncAwait/TestPerformance/Program.cs" relfile="TestPerformance/Program.cs" line="46" column="1" />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="TemplateServer/GameLogic.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Server/Program.cs">
     <Files>
       <File FileName="TestPerformance/Program.cs" Line="36" Column="17" />
-      <File FileName="Server/ServerManager.cs" Line="50" Column="21" />
-      <File FileName="Server/ClientTCP.cs" Line="19" Column="69" />
-      <File FileName="Server/NetworkPackage/MoveData.cs" Line="32" Column="1" />
-      <File FileName="Server/Program.cs" Line="39" Column="27" />
-      <File FileName="Server/NetworkPackage/Package.cs" Line="8" Column="34" />
-      <File FileName="Server/ExtensionMethod/ByteTransform.cs" Line="18" Column="14" />
-      <File FileName="Server/ClientTCP2.cs" Line="23" Column="75" />
-      <File FileName="Server/NetworkPackage/PackageType.cs" Line="8" Column="1" />
-      <File FileName="Server/DataConfigure.cs" Line="1" Column="1" />
+      <File FileName="Server/ServerManager.cs" Line="68" Column="1" />
+      <File FileName="Server/Program.cs" Line="75" Column="131" />
+      <File FileName="Server/NetworkPackage/Package.cs" Line="339" Column="1" />
+      <File FileName="Server/ExtensionMethod/ByteTransform.cs" Line="25" Column="41" />
+      <File FileName="Server/ClientTCP2.cs" Line="26" Column="10" />
+      <File FileName="Server/NetworkPackage/PackageType.cs" Line="5" Column="14" />
+      <File FileName="Server/DataConfigure.cs" Line="12" Column="55" />
       <File FileName="Server/Server.csproj" Line="1" Column="1" />
-      <File FileName="Server3.1/Program.cs" Line="27" Column="65" />
-      <File FileName="Server3.1/ClientTCP.cs" Line="1" Column="1" />
-      <File FileName="Server3.1/NetworkPackage/LoginData.cs" Line="10" Column="37" />
-      <File FileName="Server3.1/ExtensionMethod/ByteTransform.cs" Line="18" Column="32" />
-      <File FileName="Server3.1/ClientTCP2.cs" Line="1" Column="1" />
-      <File FileName="Server3.1/ServerManager.cs" Line="34" Column="1" />
-      <File FileName="Server3.1/NetworkPackage/MoveData.cs" Line="1" Column="1" />
-      <File FileName="Server3.1/NetworkPackage/Package.cs" Line="1" Column="1" />
-      <File FileName="Server3.1/NetworkPackage/PackageType.cs" Line="1" Column="1" />
-      <File FileName="Server/NetworkPackage/LoginData.cs" Line="29" Column="10" />
-      <File FileName="AsyncAwait/Program.cs" Line="1" Column="1" />
+      <File FileName="Server/NetworkPackage/LoginData.cs" Line="26" Column="10" />
+      <File FileName="AsyncAwait/Program.cs" Line="28" Column="60" />
       <File FileName="AsyncAwait/TestAsyncAwait.cs" Line="23" Column="10" />
       <File FileName="TemplateServer/Program.cs" Line="15" Column="61" />
-      <File FileName="TemplateServer/Client.cs" Line="1" Column="1" />
+      <File FileName="TemplateServer/Client.cs" Line="166" Column="39" />
       <File FileName="TemplateServer/ThreadManager.cs" Line="1" Column="1" />
       <File FileName="TemplateServer/ServerSend.cs" Line="1" Column="1" />
-      <File FileName="TemplateServer/ServerHandle.cs" Line="10" Column="64" />
-      <File FileName="TemplateServer/Server.cs" Line="131" Column="73" />
-      <File FileName="TemplateServer/Packet.cs" Line="24" Column="18" />
+      <File FileName="TemplateServer/ServerHandle.cs" Line="10" Column="28" />
+      <File FileName="TemplateServer/Server.cs" Line="106" Column="28" />
+      <File FileName="TemplateServer/Packet.cs" Line="87" Column="20" />
       <File FileName="TemplateServer/GameLogic.cs" Line="16" Column="39" />
       <File FileName="TemplateServer/Player.cs" Line="30" Column="21" />
       <File FileName="TemplateServer/Constants.cs" Line="1" Column="1" />
+      <File FileName="Server/HTTPTest.cs" Line="27" Column="48" />
+      <File FileName="Server/ExtensionMethod/ByteConvert.cs" Line="9" Column="8" />
+      <File FileName="../../../../../../../usr/local/share/dotnet/sdk/6.0.402/Microsoft.Common.CurrentVersion.targets" Line="4632" Column="5" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="AsyncAwait" expanded="True">
-            <Node name="Server" expanded="True" />
-            <Node name="TemplateServer" expanded="True">
-              <Node name="GameLogic.cs" selected="True" />
+            <Node name="AsyncAwait" expanded="True" />
+            <Node name="Server" expanded="True">
+              <Node name="ExtensionMethod" expanded="True" />
+              <Node name="NetworkPackage" expanded="True" />
             </Node>
+            <Node name="TemplateServer" expanded="True" />
+            <Node name="TestPerformance" expanded="True" />
           </Node>
         </State>
       </Pad>
@@ -57,8 +49,13 @@
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.TemplateServer PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.ItemProperties.TestPerformance PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.AsyncAwait PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.ItemProperties.DatabaseServer FirstBuild="True" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <Breakpoint file="/Users/hoangthang/Desktop/WorkSpace/C#/AsyncAwaitCSharp/AsyncAwait/TestPerformance/Program.cs" relfile="TestPerformance/Program.cs" line="46" column="1" />
+    <Breakpoint file="/Users/hoangthang/Desktop/WorkSpace/C#/AsyncAwaitCSharp/AsyncAwait/Server/ServerManager.cs" relfile="Server/ServerManager.cs" line="63" column="1" />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.TestPerformance PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.ItemProperties.TemplateServer PreferredExecutionTarget="MonoDevelop.Default" />
 </Properties>
