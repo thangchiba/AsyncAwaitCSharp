@@ -12,24 +12,25 @@ namespace Server.NetworkPackage
         internal List<byte> buffer = new List<byte>();
         internal byte[] readableBuffer;
         internal int readPos = 0;
+        public abstract PackageType packageType { get; }
 
-        public abstract long GetSize();
-        public abstract byte[] Serialize();
+        internal bool serialized = false;
+        internal abstract byte[] Serialize();
         internal abstract void Deserialize();
+        internal abstract void Execution();
 
         /// <summary>Creates a new empty packet (without an ID).</summary>
-        public Package()
+        protected Package()
         {
             buffer = new List<byte>(); // Initialize buffer
             readPos = 0; // Set readPos to 0
+            Write((byte)packageType);
         }
 
         /// <summary>Creates a new packet with a given ID. Used for sending.</summary>
         /// <param name="_id">The packet ID.</param>
-        public Package(int _id)
+        internal Package(int _id) : this()
         {
-            buffer = new List<byte>(); // Initialize buffer
-            readPos = 0; // Set readPos to 0
             Write(_id); // Write packet id to the buffer
         }
 
@@ -38,9 +39,18 @@ namespace Server.NetworkPackage
         public Package(byte[] _data)
         {
             buffer = new List<byte>(); // Initialize buffer
-            readPos = 0; // Set readPos to 0
+            readPos = 1; // Set readPos to 0
             SetBytes(_data);
             Deserialize();
+        }
+
+        public Type GetPackageType()
+        {
+            if (readableBuffer[0] == (byte)PackageType.LoginData)
+                return typeof(LoginData);
+            if (readableBuffer[0] == (byte)PackageType.MoveData)
+                return typeof(MoveData);
+            else return null;
         }
 
         #region Functions
@@ -50,6 +60,12 @@ namespace Server.NetworkPackage
         {
             Write(_data);
             readableBuffer = buffer.ToArray();
+        }
+
+        public byte[] GetBytes()
+        {
+            if (!serialized) Serialize();
+            return buffer.ToArray();
         }
 
         /// <summary>Inserts the length of the packet's content at the start of the buffer.</summary>

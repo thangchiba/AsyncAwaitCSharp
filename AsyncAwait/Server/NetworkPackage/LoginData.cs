@@ -12,16 +12,15 @@ namespace Server.NetworkPackage
     {
         public string userName;
         public string password;
-        public LoginData()
-        {
-        }
-        public LoginData(string userName, string password)
+        public override PackageType packageType => PackageType.LoginData;
+
+        public LoginData(string userName, string password) : base()
         {
             this.userName = userName;
             this.password = password;
         }
 
-        public LoginData(byte[] data) : base(data)
+        public LoginData(byte[] _data) : base(_data)
         {
         }
 
@@ -32,16 +31,17 @@ namespace Server.NetworkPackage
             //return this;
         }
 
-        public override long GetSize()
-        {
-            throw new NotImplementedException();
-        }
-
-        public override byte[] Serialize()
+        internal override byte[] Serialize()
         {
             Write(userName);
             Write(password);
+            serialized = true;
             return buffer.ToArray();
+        }
+
+        internal override void Execution()
+        {
+            Console.WriteLine("Run Login");
         }
     }
 }
