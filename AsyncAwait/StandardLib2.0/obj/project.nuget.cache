@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "FXPM9vAoyTYG+5ivSBhoSz2JXMhMLNxUonDHoiyCpYY5Xa/gBzN3J7nBKlz+5bjkoYO/m0QIgSI9ozBb4jD1IQ==",
+  "success": true,
+  "projectFilePath": "C:\\Workspace\\CSharp\\AsyncAwaitCSharp\\AsyncAwait\\StandardLib2.0\\StandardLib2.0.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\pc023\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\pc023\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
