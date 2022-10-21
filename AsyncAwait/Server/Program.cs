@@ -36,39 +36,34 @@ internal class Program
         //    Thread.Sleep(50);
         //}
 
+
+
+
+        //var login = new LoginData("hoangthang", "123456");
+        //var se = login.GetBytes();
+        //Package receivePack = null;
+        //if (se[0] == (byte)PackageType.LoginData)
+        //{
+        //    receivePack = new LoginData(se);
+        //}
+        //if (se[0] == (byte)PackageType.MoveData)
+        //{
+        //    receivePack = new MoveData(se);
+        //}
+        ////var move = new MoveData(25, new Vector3(27f, 73f, 82.34f));
+        ////var b = new LoginData(a.Serialize());
+
+        ////var c = move.Serialize();
+        //receivePack?.Execution();
+
+
+
+        //var login2 = new LoginData("hoangthang", "123456");
+        //var move = new MoveData(25, new Vector3(27f, 73, 82.34f));
+
+        //var testResult = listPack.Serialize();
+        //var DeseTest = testResult.Deserialize();
         //SendMultiPackage();
-
-
-
-        var login = new LoginData("hoangthang", "123456");
-        var se = login.GetBytes();
-        Package receivePack = null;
-        if (se[0] == (byte)PackageType.LoginData)
-        {
-            receivePack = new LoginData(se);
-        }
-        if (se[0] == (byte)PackageType.MoveData)
-        {
-            receivePack = new MoveData(se);
-        }
-        //var move = new MoveData(25, new Vector3(27f, 73f, 82.34f));
-        //var b = new LoginData(a.Serialize());
-
-        //var c = move.Serialize();
-        receivePack?.Execution();
-
-
-
-        var login2 = new LoginData("hoangthang", "123456");
-        var move = new MoveData(25, new Vector3(27f, 73, 82.34f));
-        List<Package> listPack = new List<Package>();
-        listPack.Add(login2);
-        listPack.Add(move);
-        listPack.Add(move);
-        listPack.Add(move);
-        listPack.Add(login2);
-        var testResult = listPack.Serialize();
-        var DeseTest = testResult.Deserialize();
         Console.ReadKey();
     }
 
@@ -77,13 +72,15 @@ internal class Program
     {
         Console.WriteLine("Nhap so client");
         int clientQuantity = int.Parse(Console.ReadLine());
-
+        int clientCount = 0;
         Thread t = new Thread(() =>
         {
-            for (int i = 0; i < clientQuantity; i++)
+            //for (int i = 0; i < clientQuantity; i++)
+            while (clientCount < clientQuantity)
             {
-                Client client3 = new Client(1996 + i);
+                Client client3 = new Client(1996 + clientCount);
                 client3.Connect();
+                clientCount++;
                 Thread.Sleep(10);
             }
         });
@@ -94,8 +91,16 @@ internal class Program
         for (int i = 0; i < 1000000; i++)
         {
             //Task.Factory.StartNew(() => ServerManager.Instance.TCPSendToAllClient(new LoginData("thangchiba", "12345678").Serialize()));
-            Task.Factory.StartNew(() => ServerManager.Instance.UDPSendToAllClient(package));
-            Thread.Sleep(25);
+            Task.Factory.StartNew(() =>
+            {
+                List<Package> listPack = new List<Package>();
+                for (int i = 0; i < clientQuantity; i++)
+                {
+                    listPack.Add(new MoveData(25, new Vector3(27f, 73, 82.34f)));
+                }
+                ServerManager.Instance.UDPSendToAllClient(listPack.Serialize());
+            });
+            Thread.Sleep(5);
         }
     }
 }

@@ -11,11 +11,11 @@ namespace Server.NetworkPackage
     [Serializable]
     public class MoveData : Package
     {
-        public int userId;
+        public ushort userId;
         public Vector3 position;
         public override PackageType packageType => PackageType.MoveData;
 
-        public MoveData(int userId, Vector3 position) : base()
+        public MoveData(ushort userId, Vector3 position) : base()
         {
             this.userId = userId;
             this.position = position;
@@ -27,7 +27,7 @@ namespace Server.NetworkPackage
 
         internal override void Deserialize()
         {
-            this.userId = ReadInt();
+            this.userId = ReadUShort();
             this.position = ReadVector3();
             //return this;
         }
@@ -42,7 +42,7 @@ namespace Server.NetworkPackage
 
         internal override void Execution()
         {
-            Console.WriteLine("Run Move");
+            Console.WriteLine("Run Move " + position.X + " - " + position.Y + " - " + position.Z);
         }
     }
 }

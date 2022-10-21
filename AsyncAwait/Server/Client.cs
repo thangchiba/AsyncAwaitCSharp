@@ -58,7 +58,7 @@ namespace Server
         private void UDPReceive(IAsyncResult ar)
         {
             byte[] udpReceived = udp.EndReceive(ar, ref endPoint);
-            LoginData loginData = new LoginData(udpReceived);
+            //LoginData loginData = new LoginData(udpReceived);
             udp.BeginReceive(UDPReceive, null);
         }
 

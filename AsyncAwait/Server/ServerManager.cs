@@ -2,6 +2,7 @@
 using System.Diagnostics;
 using System.Net;
 using System.Net.Sockets;
+using System.Numerics;
 using System.Text;
 using Server.ExtensionMethod;
 using Server.NetworkPackage;
@@ -60,6 +61,8 @@ namespace Server
         private void UDPReceive(IAsyncResult ar)
         {
             byte[] udpReceived = udp.EndReceive(ar, ref endPoint);
+            List<Package> listPackage = udpReceived.Deserialize();
+            listPackage[0].Execution();
             udp.BeginReceive(UDPReceive, null);
         }
 
@@ -82,6 +85,7 @@ namespace Server
         private void CloseConnection()
         {
             Console.WriteLine("Closed Connection");
+            listTCP = new List<TcpClient>();
         }
 
         public void UDPSendToAllClient(byte[] package)

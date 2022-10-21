@@ -136,6 +136,12 @@ namespace Server.NetworkPackage
         {
             buffer.AddRange(BitConverter.GetBytes(_value));
         }
+        /// <summary>Adds a ushort to the packet.</summary>
+        /// <param name="_value">The ushort to add.</param>
+        public void Write(ushort _value)
+        {
+            buffer.AddRange(BitConverter.GetBytes(_value));
+        }
         /// <summary>Adds an int to the packet.</summary>
         /// <param name="_value">The int to add.</param>
         public void Write(int _value)
@@ -164,7 +170,7 @@ namespace Server.NetworkPackage
         /// <param name="_value">The string to add.</param>
         public void Write(string _value)
         {
-            Write(_value.Length); // Add the length of the string to the packet
+            Write((ushort)_value.Length); // Add the length of the string to the packet
             buffer.AddRange(Encoding.ASCII.GetBytes(_value)); // Add the string itself
         }
         /// <summary>Adds a Vector3 to the packet.</summary>
@@ -248,6 +254,27 @@ namespace Server.NetworkPackage
             else
             {
                 throw new Exception("Could not read value of type 'short'!");
+            }
+        }
+
+        /// <summary>Reads a ushort from the packet.</summary>
+        /// <param name="_moveReadPos">Whether or not to move the buffer's read position.</param>
+        public ushort ReadUShort(bool _moveReadPos = true)
+        {
+            if (buffer.Count > readPos)
+            {
+                // If there are unread bytes
+                ushort _value = BitConverter.ToUInt16(readableBuffer, readPos); // Convert the bytes to a short
+                if (_moveReadPos)
+                {
+                    // If _moveReadPos is true and there are unread bytes
+                    readPos += 2; // Increase readPos by 2
+                }
+                return _value; // Return the short
+            }
+            else
+            {
+                throw new Exception("Could not read value of type 'ushort'!");
             }
         }
 
@@ -341,7 +368,7 @@ namespace Server.NetworkPackage
         {
             try
             {
-                int _length = ReadInt(); // Get the length of the string
+                ushort _length = ReadUShort(); // Get the length of the string
                 string _value = Encoding.ASCII.GetString(readableBuffer, readPos, _length); // Convert the bytes to a string
                 if (_moveReadPos && _value.Length > 0)
                 {

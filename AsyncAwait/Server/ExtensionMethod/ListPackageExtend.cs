@@ -15,7 +15,7 @@ namespace Server.ExtensionMethod
                 foreach (Package package in listPackage)
                 {
                     byte[] addBytes = package.GetBytes();
-                    buffer.AddRange(BitConverter.GetBytes(addBytes.Length));
+                    buffer.AddRange(BitConverter.GetBytes((ushort)addBytes.Length));
                     buffer.AddRange(addBytes);
                 }
                 return buffer.ToArray();
@@ -30,8 +30,6 @@ namespace Server.ExtensionMethod
 
         public static List<Package>? Deserialize(this byte[] buffer)
         {
-            MemoryStream stream = new MemoryStream(buffer);
-            BinaryFormatter bf = new BinaryFormatter();
             List<Package> result = new List<Package>();
             int readPos = 0;
             try
@@ -39,8 +37,8 @@ namespace Server.ExtensionMethod
                 //return (T)bf.Deserialize(stream);
                 while (readPos < buffer.Length)
                 {
-                    int packetLength = BitConverter.ToInt32(buffer, readPos);
-                    readPos += 4;
+                    int packetLength = BitConverter.ToInt16(buffer, readPos);
+                    readPos += 2;
                     byte[] packageBuffer = new byte[packetLength];
                     Buffer.BlockCopy(buffer, readPos, packageBuffer, 0, packetLength);
                     result.Add(DetectPackage(packageBuffer));
