@@ -24,19 +24,16 @@ namespace Server.NetworkPackage
         {
         }
 
-        internal override void Deserialize()
+        internal override void ReadData()
         {
-            this.userName = ReadString();
-            this.password = ReadString();
-            //return this;
+            this.userName = buffer.ReadString();
+            this.password = buffer.ReadString();
         }
 
-        internal override byte[] Serialize()
+        internal override void WriteData()
         {
-            Write(userName);
-            Write(password);
-            serialized = true;
-            return buffer.ToArray();
+            buffer.Write(userName);
+            buffer.Write(password);
         }
 
         internal override void Execution()

@@ -21,10 +21,9 @@ namespace Server
                 return instance;
             }
         }
-
-        IPEndPoint? endPoint;
         TcpListener tcp;
         UdpClient udp;
+        IPEndPoint? endPoint;
         List<TcpClient> listTCP;
         List<UdpClient> listUDP;
         NetworkStream? receiveData;
@@ -61,8 +60,9 @@ namespace Server
         private void UDPReceive(IAsyncResult ar)
         {
             byte[] udpReceived = udp.EndReceive(ar, ref endPoint);
-            List<Package> listPackage = udpReceived.Deserialize();
-            listPackage[0].Execution();
+            //List<Package> listPackage = udpReceived.Deserialize();
+            Package package = new MoveData(udpReceived);
+            package.Execution();
             udp.BeginReceive(UDPReceive, null);
         }
 

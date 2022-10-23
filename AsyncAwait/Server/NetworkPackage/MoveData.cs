@@ -25,19 +25,16 @@ namespace Server.NetworkPackage
         {
         }
 
-        internal override void Deserialize()
+        internal override void ReadData()
         {
-            this.userId = ReadUShort();
-            this.position = ReadVector3();
-            //return this;
+            this.userId = buffer.ReadUShort();
+            this.position = buffer.ReadVector3();
         }
 
-        internal override byte[] Serialize()
+        internal override void WriteData()
         {
-            Write(userId);
-            Write(position);
-            serialized = true;
-            return buffer.ToArray();
+            buffer.Write(userId);
+            buffer.Write(position);
         }
 
         internal override void Execution()

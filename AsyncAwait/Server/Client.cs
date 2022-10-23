@@ -27,6 +27,7 @@ namespace Server
             try
             {
                 ServerAddress = new IPEndPoint(IPAddress.Parse("127.0.0.1"), 1995);
+                //ServerAddress = new IPEndPoint(IPAddress.Parse("192.168.1.46"), 1995);
                 ClientAddress = new IPEndPoint(IPAddress.Parse("127.0.0.1"), port);
                 //tcp = new TcpClient(AddressFamily.InterNetwork);
                 tcp = new TcpClient(ClientAddress);
@@ -62,9 +63,9 @@ namespace Server
             udp.BeginReceive(UDPReceive, null);
         }
 
-        void UDPSend(byte[] package)
+        public void UDPSend(byte[] package)
         {
-            udp.Send(package);
+            udp.Send(package,package.Length,ServerAddress);
         }
 
         private void TCPReceive(IAsyncResult ar)

@@ -14,7 +14,7 @@ namespace Server.ExtensionMethod
                 //bf.Serialize(stream, obj);
                 foreach (Package package in listPackage)
                 {
-                    byte[] addBytes = package.GetBytes();
+                    byte[] addBytes = package.buffer.GetBytes();
                     buffer.AddRange(BitConverter.GetBytes((ushort)addBytes.Length));
                     buffer.AddRange(addBytes);
                 }

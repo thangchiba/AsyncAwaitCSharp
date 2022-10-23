@@ -8,7 +8,7 @@ namespace Server
         HttpClient client = new HttpClient();
         object lockob = new object();
         int count = 0;
-        string url = "tlhuuduyen.info";
+        string url = "http://127.0.0.1:31319/player";
         public async Task SendRequest()
         {
             await Task.Factory.StartNew(() => { client.GetAsync(url); });
